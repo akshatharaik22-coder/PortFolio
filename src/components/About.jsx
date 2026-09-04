@@ -12,19 +12,14 @@ import "../styles/about.css";
 
 
 function About() {
-
   return (
     <section className="about" id="about">
 
       <motion.div
         className="about-container"
-
         initial={{ opacity: 0, y: 40 }}
-
         whileInView={{ opacity: 1, y: 0 }}
-
         transition={{ duration: 0.8 }}
-
         viewport={{ once: true }}
       >
 
@@ -50,7 +45,7 @@ function About() {
         <div className="about-content">
 
 
-          {/* ================= PROFILE ================= */}
+          {/* ================= PROFILE IMAGE ================= */}
 
           <div className="about-profile">
 
@@ -63,7 +58,7 @@ function About() {
               <div className="about-orbit orbit-two"></div>
 
 
-              {/* Profile image */}
+              {/* Profile Image */}
 
               <div className="about-profile-circle">
 
@@ -79,11 +74,9 @@ function About() {
 
               <motion.div
                 className="about-card ai-card"
-
                 animate={{
                   y: [0, -8, 0],
                 }}
-
                 transition={{
                   duration: 3,
                   repeat: Infinity,
@@ -97,7 +90,7 @@ function About() {
 
                 <div>
                   <small>Focus</small>
-                  <strong>AI & ML</strong>
+                  <strong>AI &amp; ML</strong>
                 </div>
 
               </motion.div>
@@ -107,11 +100,9 @@ function About() {
 
               <motion.div
                 className="about-card stack-card"
-
                 animate={{
                   y: [0, 8, 0],
                 }}
-
                 transition={{
                   duration: 3.5,
                   repeat: Infinity,
@@ -135,7 +126,7 @@ function About() {
           </div>
 
 
-          {/* ================= TEXT ================= */}
+          {/* ================= ABOUT TEXT ================= */}
 
           <div className="about-text">
 
@@ -146,8 +137,8 @@ function About() {
 
             <p>
               I am Akshatha Rai K, currently pursuing my Master of
-              Computer Applications (MCA). I am interested in
-              Artificial Intelligence, Machine Learning, Computer
+              Computer Applications (MCA) at NMAMIT. I am interested
+              in Artificial Intelligence, Machine Learning, Computer
               Vision, and Full-Stack Development.
             </p>
 
@@ -169,7 +160,7 @@ function About() {
             </p>
 
 
-            {/* ================= MINI HIGHLIGHT ================= */}
+            {/* ================= CURRENT INTEREST ================= */}
 
             <div className="about-mini-card">
 
@@ -201,6 +192,8 @@ function About() {
         <div className="about-highlights">
 
 
+          {/* AI & ML */}
+
           <div className="highlight-card">
 
             <span>01</span>
@@ -216,6 +209,8 @@ function About() {
 
           </div>
 
+
+          {/* FULL STACK */}
 
           <div className="highlight-card">
 
@@ -233,6 +228,8 @@ function About() {
 
           </div>
 
+
+          {/* RESEARCH */}
 
           <div className="highlight-card">
 
