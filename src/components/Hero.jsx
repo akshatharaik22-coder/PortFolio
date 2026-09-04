@@ -6,8 +6,6 @@ import {
   FiArrowDown,
 } from "react-icons/fi";
 
-import profileImage from "../assets/images/my_pic.jpg";
-
 import "../styles/hero.css";
 
 function Hero() {
@@ -29,16 +27,14 @@ function Hero() {
 
       <div className="hero-container">
 
-        {/* ================= LEFT SIDE ================= */}
-
         <motion.div
           className="hero-text"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
 
-          {/* Small availability badge */}
+          {/* Availability */}
 
           <div className="availability">
             <span className="availability-dot"></span>
@@ -46,7 +42,7 @@ function Hero() {
           </div>
 
 
-          {/* NAME */}
+          {/* Name */}
 
           <h1>
             Hey, I am
@@ -54,29 +50,29 @@ function Hero() {
           </h1>
 
 
-          {/* ROLE */}
+          {/* Role */}
 
           <p className="hero-label">
             AI • ML • FULL STACK DEVELOPER
           </p>
 
 
-          {/* SHORT TAGLINE */}
+          {/* Short tagline */}
 
           <h2>
             Building intelligent solutions with AI.
           </h2>
 
 
-          {/* BUTTONS */}
+          {/* Buttons */}
 
           <div className="hero-buttons">
 
             <motion.button
               className="hero-btn primary"
               onClick={scrollToProjects}
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.96 }}
+              whileHover={{ y: -3 }}
+              whileTap={{ scale: 0.97 }}
             >
               View My Work
             </motion.button>
@@ -85,8 +81,8 @@ function Hero() {
             <motion.button
               className="hero-btn secondary"
               onClick={scrollToContact}
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.96 }}
+              whileHover={{ y: -3 }}
+              whileTap={{ scale: 0.97 }}
             >
               <FiMail />
               Get In Touch
@@ -95,7 +91,7 @@ function Hero() {
           </div>
 
 
-          {/* SOCIAL */}
+          {/* Social Links */}
 
           <div className="hero-socials">
 
@@ -123,88 +119,10 @@ function Hero() {
 
         </motion.div>
 
-
-        {/* ================= RIGHT SIDE ================= */}
-
-        <motion.div
-          className="hero-visual"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-        >
-
-          {/* Decorative circles */}
-
-          <div className="profile-orbit orbit-one"></div>
-
-          <div className="profile-orbit orbit-two"></div>
-
-
-          {/* PROFILE */}
-
-          <div className="profile-circle">
-
-            <img
-              src={profileImage}
-              alt="Akshatha Rai K"
-            />
-
-          </div>
-
-
-          {/* AI CARD */}
-
-          <motion.div
-            className="profile-card ai-card"
-            animate={{ y: [0, -8, 0] }}
-            transition={{
-              duration: 3,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          >
-
-            <div className="card-icon">
-              AI
-            </div>
-
-            <div>
-              <small>Focus</small>
-              <strong>Artificial Intelligence</strong>
-            </div>
-
-          </motion.div>
-
-
-          {/* DL CARD */}
-
-          <motion.div
-            className="profile-card dl-card"
-            animate={{ y: [0, 8, 0] }}
-            transition={{
-              duration: 3.5,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          >
-
-            <div className="card-icon">
-              DL
-            </div>
-
-            <div>
-              <small>Interest</small>
-              <strong>Deep Learning</strong>
-            </div>
-
-          </motion.div>
-
-        </motion.div>
-
       </div>
 
 
-      {/* SCROLL DOWN */}
+      {/* Scroll Down */}
 
       <motion.button
         className="scroll-down"
@@ -216,11 +134,8 @@ function Hero() {
         }}
         aria-label="Scroll to projects"
       >
-
         <span>Scroll Down</span>
-
         <FiArrowDown />
-
       </motion.button>
 
     </section>
