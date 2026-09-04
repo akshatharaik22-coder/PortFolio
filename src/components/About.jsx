@@ -130,9 +130,7 @@ function About() {
 
           <div className="about-text">
 
-            <h3>
-              MCA Student &amp; Aspiring AI / Full-Stack Developer
-            </h3>
+            
 
 
             <p>
