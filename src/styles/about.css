@@ -8,7 +8,7 @@
 
     padding: 120px 30px 100px;
 
-    background: #ffffff;
+    background: var(--bg);
 }
 
 
@@ -32,7 +32,7 @@
 
 
 .section-label {
-    color: #59aeb8;
+    color: var(--accent);
 
     font-size: 14px;
 
@@ -45,7 +45,7 @@
 
 
 .about-heading h2 {
-    color: #111827;
+    color: var(--heading);
 
     font-size: 58px;
 
@@ -66,7 +66,7 @@
 
     margin: 0 auto;
 
-    background: #59aeb8;
+    background: var(--accent);
 
     border-radius: 20px;
 }
@@ -134,12 +134,12 @@
 
     z-index: 3;
 
-    border: 8px solid #ffffff;
+    border: 8px solid var(--bg);
 
     box-shadow:
-        0 20px 50px rgba(15, 23, 42, 0.14);
+        0 20px 50px var(--shadow);
 
-    background: #f1f5f9;
+    background: var(--surface-hover);
 }
 
 
@@ -172,7 +172,7 @@
 
     height: 350px;
 
-    border: 1px solid #dceff1;
+    border: 1px solid var(--accent-border);
 
     z-index: 1;
 }
@@ -183,7 +183,7 @@
 
     height: 390px;
 
-    border: 1px dashed #dceff1;
+    border: 1px dashed var(--accent-border);
 
     z-index: 1;
 }
@@ -208,14 +208,14 @@
 
     gap: 13px;
 
-    background: rgba(255, 255, 255, 0.96);
+    background: var(--nav-bg);
 
-    border: 1px solid #e3e7eb;
+    border: 1px solid var(--border);
 
     border-radius: 15px;
 
     box-shadow:
-        0 15px 35px rgba(15, 23, 42, 0.10);
+        0 15px 35px var(--shadow);
 
     backdrop-filter: blur(8px);
 }
@@ -224,7 +224,7 @@
 .about-card small {
     display: block;
 
-    color: #94a3b8;
+    color: var(--muted);
 
     font-size: 11px;
 
@@ -235,7 +235,7 @@
 .about-card strong {
     display: block;
 
-    color: #26364d;
+    color: var(--text);
 
     font-size: 14px;
 
@@ -250,9 +250,9 @@
 
     border-radius: 12px;
 
-    background: #eef9fa;
+    background: var(--accent-soft);
 
-    color: #59aeb8;
+    color: var(--accent);
 
     display: flex;
 
@@ -283,7 +283,7 @@
 ======================================== */
 
 .about-text h3 {
-    color: #111827;
+    color: var(--heading);
 
     font-size: 36px;
 
@@ -298,7 +298,7 @@
 
 
 .about-text p {
-    color: #64748b;
+    color: var(--muted);
 
     font-size: 17px;
 
@@ -323,9 +323,9 @@
 
     gap: 15px;
 
-    background: #f8fafc;
+    background: var(--surface);
 
-    border: 1px solid #e5e9ee;
+    border: 1px solid var(--border);
 
     border-radius: 15px;
 }
@@ -346,9 +346,9 @@
 
     justify-content: center;
 
-    background: #eef9fa;
+    background: var(--accent-soft);
 
-    color: #59aeb8;
+    color: var(--accent);
 
     font-size: 20px;
 }
@@ -357,7 +357,7 @@
 .about-mini-card span {
     display: block;
 
-    color: #94a3b8;
+    color: var(--muted);
 
     font-size: 11px;
 
@@ -370,7 +370,7 @@
 
 
 .about-mini-card strong {
-    color: #334155;
+    color: var(--text);
 
     font-size: 14px;
 
@@ -396,9 +396,9 @@
 .highlight-card {
     padding: 28px;
 
-    background: #f8fafc;
+    background: var(--surface);
 
-    border: 1px solid #e5e9ee;
+    border: 1px solid var(--border);
 
     border-radius: 18px;
 
@@ -412,15 +412,15 @@
 .highlight-card:hover {
     transform: translateY(-5px);
 
-    border-color: #cce8eb;
+    border-color: var(--accent-border);
 
     box-shadow:
-        0 18px 35px rgba(15, 23, 42, 0.08);
+        0 18px 35px var(--shadow);
 }
 
 
 .highlight-card span {
-    color: #59aeb8;
+    color: var(--accent);
 
     font-size: 13px;
 
@@ -431,7 +431,7 @@
 
 
 .highlight-card h4 {
-    color: #111827;
+    color: var(--heading);
 
     font-size: 20px;
 
@@ -442,7 +442,7 @@
 
 
 .highlight-card p {
-    color: #64748b;
+    color: var(--muted);
 
     font-size: 14px;
 

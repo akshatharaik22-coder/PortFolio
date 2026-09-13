@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -10,9 +12,19 @@ import Contact from "./components/contact";
 import Footer from "./components/Footer";
 
 function App() {
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "light";
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
   return (
     <>
-      <Navbar />
+      <Navbar theme={theme} setTheme={setTheme} />
+
       <Hero />
       <About />
       <Skills />

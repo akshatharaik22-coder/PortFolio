@@ -1,10 +1,14 @@
+/* ========================================
+   GALLERY SECTION
+======================================== */
+
 .gallery {
     width: 100%;
     min-height: 100vh;
 
     padding: 120px 30px 90px;
 
-    background: #f8fafc;
+    background: var(--surface);
 }
 
 .gallery-container {
@@ -14,7 +18,10 @@
     margin: 0 auto;
 }
 
-/* Heading */
+
+/* ========================================
+   HEADING
+======================================== */
 
 .gallery-heading {
     text-align: center;
@@ -22,7 +29,7 @@
 }
 
 .gallery-heading h2 {
-    color: #111827;
+    color: var(--heading);
 
     font-size: 48px;
 
@@ -34,14 +41,17 @@
 
     margin: 25px auto 0;
 
-    color: #6b7280;
+    color: var(--muted);
 
     font-size: 17px;
 
     line-height: 1.7;
 }
 
-/* Gallery Grid */
+
+/* ========================================
+   GALLERY GRID
+======================================== */
 
 .gallery-grid {
     display: grid;
@@ -51,7 +61,10 @@
     gap: 22px;
 }
 
-/* Card */
+
+/* ========================================
+   CARD
+======================================== */
 
 .gallery-card {
     position: relative;
@@ -62,9 +75,9 @@
 
     border-radius: 20px;
 
-    background: #ffffff;
+    background: var(--bg);
 
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--border);
 
     cursor: pointer;
 
@@ -75,10 +88,13 @@
 
 .gallery-card:hover {
     box-shadow:
-        0 18px 35px rgba(0, 0, 0, 0.1);
+        0 18px 35px var(--shadow);
 }
 
-/* Images */
+
+/* ========================================
+   IMAGES
+======================================== */
 
 .gallery-card img {
     width: 100%;
@@ -95,7 +111,10 @@
     transform: scale(1.08);
 }
 
-/* Placeholder */
+
+/* ========================================
+   PLACEHOLDER
+======================================== */
 
 .gallery-placeholder {
     width: 100%;
@@ -109,20 +128,23 @@
     background:
         linear-gradient(
             135deg,
-            #eef2f7,
-            #ffffff
+            var(--surface-hover),
+            var(--bg)
         );
 }
 
 .gallery-placeholder span {
-    color: #00aeb5;
+    color: var(--accent);
 
     font-size: 48px;
 
     font-weight: 700;
 }
 
-/* Bottom Overlay */
+
+/* ========================================
+   BOTTOM OVERLAY
+======================================== */
 
 .gallery-overlay {
     position: absolute;
@@ -136,12 +158,12 @@
     background:
         linear-gradient(
             transparent,
-            rgba(17, 24, 39, 0.95)
+            var(--inverse-bg)
         );
 }
 
 .gallery-overlay p {
-    color: #00aeb5;
+    color: var(--accent);
 
     font-size: 12px;
 
@@ -153,14 +175,17 @@
 }
 
 .gallery-overlay h3 {
-    color: #ffffff;
+    color: var(--inverse-text);
 
     font-size: 22px;
 
     margin: 0;
 }
 
-/* Tablet */
+
+/* ========================================
+   TABLET
+======================================== */
 
 @media (max-width: 900px) {
 
@@ -173,7 +198,10 @@
     }
 }
 
-/* Mobile */
+
+/* ========================================
+   MOBILE
+======================================== */
 
 @media (max-width: 550px) {
 

@@ -41,7 +41,7 @@ function Footer() {
             <div className="social-icons">
 
               <a
-                href=""
+                href="https://github.com/akshatharaik22-coder"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -50,7 +50,7 @@ function Footer() {
               </a>
 
               <a
-                href=""
+                href="https://www.linkedin.com/in/akshatha-rai-b6880926a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -59,10 +59,12 @@ function Footer() {
               </a>
 
               <a
-                href="mailto:your-email@example.com"
-                aria-label="Email"
-              >
-                <FiMail />
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=YOUR_EMAIL@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Email"
+                 >
+                 <FiMail />
               </a>
 
             </div>

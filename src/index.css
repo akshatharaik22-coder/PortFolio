@@ -1,17 +1,141 @@
+/* ================================
+   GLOBAL RESET
+================================ */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
+/* ================================
+   HTML
+================================ */
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
+
+/* ================================
+   LIGHT THEME
+================================ */
+
+:root {
+  --bg: #ffffff;
+  --surface: #f8fafc;
+  --surface-hover: #f1f5f9;
+
+  --text: #111827;
+  --heading: #0f172a;
+  --muted: #5f6472;
+
+  --border: #e5e7eb;
+
+  --accent: #00aeb5;
+  --accent-hover: #008f96;
+
+  --nav-bg: rgba(255, 255, 255, 0.92);
+
+  --shadow: rgba(15, 23, 42, 0.08);
+
+  /* Used for dark/inverse cards */
+  --inverse-bg: #111827;
+  --inverse-text: #ffffff;
+  --inverse-muted: #d1d5db;
+  --inverse-border: #374151;
+
+  /* Soft accent backgrounds */
+  --accent-soft: #eef9fa;
+  --accent-border: #dceff1;
+}
+
+
+/* ================================
+   DARK THEME
+================================ */
+
+[data-theme="dark"] {
+  --bg: #0b1120;
+  --surface: #111827;
+  --surface-hover: #1e293b;
+
+  --text: #f8fafc;
+  --heading: #ffffff;
+  --muted: #a1a1aa;
+
+  --border: #263244;
+
+  --accent: #22d3ee;
+  --accent-hover: #06b6d4;
+
+  --nav-bg: rgba(11, 17, 32, 0.92);
+
+  --shadow: rgba(0, 0, 0, 0.3);
+
+  /* Used for dark/inverse cards */
+  --inverse-bg: #020617;
+  --inverse-text: #ffffff;
+  --inverse-muted: #cbd5e1;
+  --inverse-border: #334155;
+
+  /* Soft accent backgrounds */
+  --accent-soft: #12333a;
+  --accent-border: #164e63;
+}
+
+
+/* ================================
+   BODY
+================================ */
+
 body {
-    margin: 0;
-    background: #050816;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+  margin: 0;
+
+  background: var(--bg);
+  color: var(--text);
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  overflow-x: hidden;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* ================================
+   GLOBAL ELEMENTS
+================================ */
+
+button,
+a {
+  font-family: inherit;
+}
+
+
+/* ================================
+   THEME TRANSITION
+================================ */
+
+section,
+.navbar,
+footer,
+.project-card,
+.skill-card,
+.highlight-card,
+.achievement-item,
+.research-detail-card,
+.research-pipeline,
+.about-mini-card,
+.about-card,
+.contact-card,
+.gallery-item {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
