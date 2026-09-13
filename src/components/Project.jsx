@@ -16,7 +16,8 @@ function Projects() {
         "JWT",
         "Axios",
       ],
-      githubLink: "",
+      githubLink:
+        "https://github.com/akshatharaik22-coder/ADHAR",
       liveLink: "",
     },
 
@@ -32,7 +33,8 @@ function Projects() {
         "TensorFlow",
         "CNN",
       ],
-      githubLink: "",
+      githubLink:
+        "https://github.com/akshatharaik22-coder/miniproject",
       liveLink: "",
     },
 
@@ -47,29 +49,14 @@ function Projects() {
         "NumPy",
         "Siamese Network",
       ],
-      githubLink: "",
-      liveLink: "",
-    },
-
-    {
-      title: "Science Exhibition Project",
-      category: "Web / Database Application",
-      description:
-        "A web-based project created to organize and present science exhibition information using a database-driven application.",
-      technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "MongoDB",
-      ],
-      githubLink: "",
+      githubLink:
+        "https://github.com/akshatharaik22-coder/Handwritten_verification",
       liveLink: "",
     },
   ];
 
   return (
     <section className="projects" id="projects">
-
       <motion.div
         className="projects-container"
         initial={{ opacity: 0, y: 50 }}
@@ -77,7 +64,6 @@ function Projects() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-
         <div className="projects-heading">
           <p className="section-label">MY WORK</p>
 
@@ -93,7 +79,6 @@ function Projects() {
         </div>
 
         <div className="projects-grid">
-
           {projects.map((project, index) => (
             <motion.article
               className="project-card"
@@ -107,7 +92,6 @@ function Projects() {
               viewport={{ once: true }}
               whileHover={{ y: -8 }}
             >
-
               <div className="project-number">
                 {String(index + 1).padStart(2, "0")}
               </div>
@@ -131,7 +115,6 @@ function Projects() {
               </div>
 
               <div className="project-links">
-
                 {project.githubLink ? (
                   <a
                     href={project.githubLink}
@@ -159,16 +142,11 @@ function Projects() {
                     Live Demo
                   </span>
                 )}
-
               </div>
-
             </motion.article>
           ))}
-
         </div>
-
       </motion.div>
-
     </section>
   );
 }
