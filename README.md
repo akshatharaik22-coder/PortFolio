@@ -1,94 +1,154 @@
 # Personal Portfolio | Akshatha Rai K
 
-A modern, responsive developer portfolio built with React and Vite to present my technical skills, software projects, research work, achievements, and professional profile in a structured and recruiter-friendly interface.
+A modern, responsive personal portfolio built with React and Vite to showcase my technical skills, software projects, research work, certifications, achievements, and professional profile.
 
 ## Live Website
 
 **Portfolio:** https://port-folio-nu-ruddy.vercel.app/
 
+---
+
 ## Overview
 
-This project is a personal portfolio website designed to provide a professional overview of my background as an AI/ML and full-stack developer.
+This project is my personal developer portfolio designed to present my academic background, technical skills, projects, research interests, certifications, achievements, and professional information in a structured and recruiter-friendly interface.
 
-The portfolio brings together:
+The portfolio includes:
 
-- Professional introduction and developer profile
-- Technical skills and technology stack
-- Full-stack and AI/ML projects
-- Academic and research work
-- Achievements and certifications
+- Professional introduction
+- About section
+- Technical skills
+- Software and AI/ML projects
+- Research work
+- Achievements
+- Certifications and courses
+- Workshop and event activities
 - Photography and visual work
 - Resume access
-- Contact information and communication section
+- Contact information
 
-The application follows a component-based React architecture so that each major portfolio section can be maintained and enhanced independently.
+The application follows a component-based React architecture, allowing each section to be developed and maintained independently.
+
+---
 
 ## Objectives
 
-The primary objectives of this portfolio are to:
+The main objectives of this portfolio are to:
 
 1. Build a professional online presence for software engineering and AI/ML opportunities.
-2. Present projects with enough technical context to demonstrate practical development skills.
-3. Highlight both academic research and application-oriented software development.
-4. Provide recruiters and hiring teams with quick access to skills, projects, resume, and contact information.
-5. Demonstrate modern frontend development practices using React, Vite, responsive design, reusable components, and animation.
-6. Maintain a scalable structure that can be extended as new projects, certifications, and experiences are added.
+2. Showcase practical software development projects.
+3. Present academic research and technical interests.
+4. Highlight certifications, workshops, awards, and achievements.
+5. Provide recruiters with quick access to skills, projects, resume, and contact information.
+6. Demonstrate modern frontend development using React, Vite, CSS, responsive design, and animations.
+7. Maintain a clean and scalable project structure for future improvements.
+
+---
 
 ## Key Features
 
 ### Professional Landing Section
 
-The landing section introduces the developer with a concise professional identity and clear navigation to the most important portfolio sections.
+Introduces my professional profile with clear navigation to the main sections of the portfolio.
 
 ### About Section
 
-Provides a structured overview of the developer's academic background, interests, development focus, and career direction.
+Provides information about my academic background, interests, technical focus, and career direction.
 
 ### Technical Skills
 
-Organizes technologies into relevant categories to make the technical profile easy to scan.
+Skills are organized into categories to make the technical profile easy to understand.
 
-Typical areas include:
+Areas include:
 
 - Programming Languages
 - Frontend Development
 - Backend Development
 - Databases
 - AI/ML
+- Computer Vision
 - Development Tools
-- Core Computer Science Fundamentals
+- Core Computer Science Concepts
 
 ### Projects
 
-The project section showcases practical development work and focuses on:
+The project section presents practical software and AI/ML projects with information about:
 
-- Project purpose
+- Project objective
 - Technologies used
-- Key functionality
+- Key features
 - Technical implementation
-- Real-world problem addressed
+- Problem being addressed
 
-Projects represented in the portfolio include work across full-stack development, AI/ML, computer vision, and application security.
+The portfolio includes projects related to:
+
+- Full-stack development
+- Authentication and security
+- Database-driven applications
+- Machine learning
+- Computer vision
 
 ### Research
 
-A dedicated research section highlights academic and technical research interests, including work related to computer vision, low-light image processing, CNN-based detection, and assistive technology.
+The research section presents ongoing academic and technical research interests.
 
-### Achievements and Certifications
+Current research work focuses on:
 
-The portfolio provides a dedicated area for presenting academic achievements, professional certifications, training programs, and other recognized accomplishments.
+- Low-light image processing
+- CLAHE-based image enhancement
+- CNN-based obstacle detection
+- Computer vision
+- Assistive technology for visually impaired people
+- Smartphone-based visual assistance
+
+The research section is intended to present ongoing academic work rather than claim a completed production system.
+
+### Achievements
+
+The achievements section showcases:
+
+- Awards
+- Workshops
+- Academic activities
+- Participation certificates
+- Professional activities
+- Events and memorable experiences
+
+The section uses an interactive image carousel to present achievement-related photographs and certificates.
+
+### Certifications
+
+A dedicated certification section presents completed courses, professional learning programs, and certification achievements.
+
+Examples include:
+
+- NPTEL Cloud Computing and Distributed Systems
+- Deloitte Technology Job Simulation
+- Professional learning programs
+- Workshops and technical training
+
+Certificates are displayed using an interactive carousel with the complete certificate image visible.
 
 ### Gallery
 
-A visual gallery section presents photography work and adds a personal dimension to the professional portfolio.
+The gallery provides a visual collection of:
+
+- Achievement photographs
+- Workshop photographs
+- Event photographs
+- Certification images
+- Personal photography and visual work
+
+The gallery is responsive and supports navigation through previous/next controls and carousel indicators.
 
 ### Resume
 
-The portfolio provides access to the current resume so recruiters can quickly review the complete professional profile.
+The portfolio provides access to my current resume so recruiters can quickly review my complete professional profile.
 
 ### Contact
 
-A dedicated contact section provides a direct way for recruiters, collaborators, and other visitors to reach out.
+A dedicated contact section allows recruiters, collaborators, and visitors to connect with me.
+
+---
 
 ## Technology Stack
 
@@ -105,7 +165,8 @@ A dedicated contact section provides a direct way for recruiters, collaborators,
 - Framer Motion
 - React Icons
 - Responsive CSS
-- Component-based UI design
+- Component-based UI
+- Interactive carousel components
 
 ### Development Tools
 
@@ -119,9 +180,11 @@ A dedicated contact section provides a direct way for recruiters, collaborators,
 
 - Vercel
 
+---
+
 ## Architecture
 
-The application follows a modular component-based architecture.
+The application follows a modular React component architecture.
 
 ```text
 portfolio/
@@ -137,7 +200,7 @@ portfolio/
 │   │   ├── Hero.jsx
 │   │   ├── About.jsx
 │   │   ├── Skills.jsx
-│   │   ├── Projects.jsx
+│   │   ├── Project.jsx
 │   │   ├── Research.jsx
 │   │   ├── Achievements.jsx
 │   │   ├── Gallery.jsx
@@ -145,6 +208,7 @@ portfolio/
 │   │   └── Footer.jsx
 │   │
 │   ├── styles/
+│   │   ├── gallery.css
 │   │   └── component-specific styles
 │   │
 │   ├── App.jsx
@@ -156,348 +220,3 @@ portfolio/
 ├── package-lock.json
 ├── vite.config.js
 └── README.md
-```
-
-> The exact file names can differ from the deployed version if the project structure has been refactored. The architecture above represents the intended modular organization of the portfolio.
-
-## Application Flow
-
-```text
-User
-  │
-  ▼
-Navigation Bar
-  │
-  ├── Home
-  ├── About
-  ├── Skills
-  ├── Projects
-  ├── Research
-  ├── Achievements
-  ├── Gallery
-  └── Contact
-  │
-  ▼
-React Components
-  │
-  ▼
-Reusable UI + CSS + Animations
-  │
-  ▼
-Vite Build
-  │
-  ▼
-Vercel Deployment
-```
-
-## Design Principles
-
-The portfolio is developed with the following principles:
-
-### 1. Professional Presentation
-
-Content is structured to make the portfolio suitable for recruiters, hiring managers, interviewers, and technical collaborators.
-
-### 2. Clear Information Hierarchy
-
-Important information such as name, professional role, skills, projects, resume, and contact details is prioritized for quick discovery.
-
-### 3. Component Reusability
-
-Each major section is implemented as a reusable React component rather than placing the complete interface inside a single component.
-
-### 4. Responsive Design
-
-The interface is designed to adapt across:
-
-- Desktop
-- Laptop
-- Tablet
-- Mobile
-
-### 5. Maintainability
-
-The project separates components, styling, assets, and application logic to make future updates easier.
-
-### 6. Performance Awareness
-
-Vite is used as the frontend build tool to provide a fast development experience and an optimized production build.
-
-## Featured Technical Areas
-
-The portfolio represents experience and project work across multiple areas of software development.
-
-### Full-Stack Development
-
-Experience demonstrated through applications involving:
-
-- React
-- Node.js
-- Express
-- MySQL
-- MongoDB
-- REST APIs
-- Authentication
-- JWT
-- OTP verification
-
-### Artificial Intelligence and Machine Learning
-
-Relevant work includes:
-
-- Computer vision
-- CNN-based models
-- Image preprocessing
-- OpenCV
-- Siamese Neural Networks
-- Low-light image enhancement
-- AI-assisted applications
-
-### Frontend Engineering
-
-The portfolio demonstrates:
-
-- React component architecture
-- Responsive layouts
-- CSS-based UI development
-- Animation
-- Interactive navigation
-- Reusable components
-- Modern frontend tooling
-
-### Database Technologies
-
-Projects and academic work include experience with:
-
-- MySQL
-- MongoDB
-
-## Development Setup
-
-### Prerequisites
-
-Install the following before running the project:
-
-- Node.js
-- npm
-- Git
-
-Verify the installation:
-
-```bash
-node --version
-npm --version
-git --version
-```
-
-### Clone the Repository
-
-```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-```
-
-Move into the project directory:
-
-```bash
-cd <PROJECT_DIRECTORY>
-```
-
-### Install Dependencies
-
-```bash
-npm install
-```
-
-### Start Development Server
-
-```bash
-npm run dev
-```
-
-Vite will provide a local development URL, typically:
-
-```text
-http://localhost:5173/
-```
-
-### Create Production Build
-
-```bash
-npm run build
-```
-
-### Preview Production Build
-
-```bash
-npm run preview
-```
-
-## Available Scripts
-
-The project uses the standard Vite development workflow.
-
-| Command | Purpose |
-|---|---|
-| `npm install` | Installs project dependencies |
-| `npm run dev` | Starts the development server |
-| `npm run build` | Creates the production build |
-| `npm run preview` | Previews the production build locally |
-
-## Deployment
-
-The portfolio is deployed using Vercel.
-
-Typical deployment workflow:
-
-```text
-Local Development
-       │
-       ▼
-Git Repository
-       │
-       ▼
-Vercel
-       │
-       ▼
-Production Deployment
-```
-
-For future deployments, the recommended approach is to connect the Git repository to Vercel and enable automatic deployment on pushes to the production branch.
-
-## Responsive Design
-
-The interface is intended to provide a consistent experience across different screen sizes.
-
-Responsive considerations include:
-
-- Flexible layouts
-- Mobile navigation
-- Responsive typography
-- Scalable images
-- Adaptive project cards
-- Touch-friendly interactive elements
-- Appropriate spacing across screen sizes
-
-## Accessibility Considerations
-
-The portfolio is designed with basic accessibility practices in mind, including:
-
-- Semantic HTML where appropriate
-- Descriptive navigation labels
-- Readable typography
-- Sufficient visual hierarchy
-- Keyboard-accessible interactive elements where supported
-- Alternative text for meaningful images
-
-Accessibility can be further improved through automated audits and manual keyboard/screen-reader testing.
-
-## Performance Considerations
-
-Performance can be maintained by:
-
-- Optimizing image sizes
-- Avoiding unnecessary dependencies
-- Lazy-loading large media where appropriate
-- Minimizing unused CSS and JavaScript
-- Keeping React components focused
-- Using optimized production builds through Vite
-
-## Security Considerations
-
-The portfolio itself is primarily a frontend application. If a backend-powered contact form or external service is integrated, sensitive configuration should be stored through environment variables rather than committed to the repository.
-
-Example:
-
-```env
-VITE_API_URL=your_api_endpoint
-```
-
-Do not commit:
-
-```text
-.env
-.env.local
-API keys
-private tokens
-credentials
-```
-
-These should be included in `.gitignore`.
-
-## Future Enhancements
-
-Potential improvements for future versions include:
-
-- Backend-powered contact form
-- Email notification system
-- Blog or technical writing section
-- Detailed project case-study pages
-- Project filtering by technology
-- Improved accessibility auditing
-- SEO metadata and structured data
-- Performance optimization and Lighthouse improvements
-- Dark/light theme support
-- Analytics integration
-- Automated CI/CD checks
-- Expanded AI/ML project demonstrations
-- Interactive project demos
-
-## Project Goals for Recruiters
-
-This portfolio is designed to communicate more than a list of technologies. It demonstrates the ability to:
-
-- Build and structure React applications
-- Work with modern frontend tooling
-- Design responsive interfaces
-- Develop full-stack applications
-- Work with relational and NoSQL databases
-- Apply AI/ML techniques to practical problems
-- Develop computer vision solutions
-- Organize software projects professionally
-- Document technical work clearly
-- Deploy applications to the web
-
-## Repository Quality Checklist
-
-Before publishing future versions, verify:
-
-- [ ] Project builds successfully
-- [ ] No unnecessary files are committed
-- [ ] Environment variables are excluded from Git
-- [ ] All navigation links work
-- [ ] Resume link works
-- [ ] Project links work
-- [ ] Images have appropriate alternative text
-- [ ] Mobile layout is tested
-- [ ] Desktop layout is tested
-- [ ] Production build completes successfully
-- [ ] README reflects the current implementation
-- [ ] Repository contains a clear project description
-- [ ] Deployment URL is accessible
-
-## Author
-
-**Akshatha Rai K**
-
-AI/ML and Full-Stack Developer
-
-Interested in:
-
-- Artificial Intelligence
-- Machine Learning
-- Full-Stack Development
-- Computer Vision
-- Software Engineering
-- Research and Emerging Technologies
-
-## Portfolio
-
-**Live Portfolio:** https://port-folio-nu-ruddy.vercel.app/
-
----
-
-## License
-
-This project is a personal portfolio website. The source code and original assets are intended for personal and professional showcase purposes.
-
-If you reference or reuse any part of the project, please provide appropriate attribution to the original author.
