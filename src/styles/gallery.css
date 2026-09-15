@@ -152,16 +152,25 @@
 
 /* ========================================
    SLIDE IMAGE
+   FIXED - FULL IMAGE VISIBLE
 ======================================== */
 
 .gallery-slide-image {
     width: 100%;
 
-    height: 500px;
+    height: auto;
+
+    max-height: 700px;
 
     display: block;
 
-    object-fit: cover;
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    background: var(--bg);
 }
 
 
@@ -212,11 +221,13 @@
     transform: translateY(-50%);
 
     width: 48px;
+
     height: 48px;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     border: 1px solid var(--border);
@@ -238,6 +249,8 @@
         background 0.3s ease,
         color 0.3s ease,
         transform 0.3s ease;
+
+    z-index: 5;
 }
 
 .gallery-arrow:hover {
@@ -265,6 +278,7 @@
     display: flex;
 
     justify-content: center;
+
     align-items: center;
 
     gap: 9px;
@@ -276,6 +290,7 @@
 
 .gallery-dot {
     width: 9px;
+
     height: 9px;
 
     padding: 0;
@@ -316,8 +331,18 @@
         font-size: 42px;
     }
 
+    /*
+       Keep the full image visible.
+       No fixed height.
+    */
     .gallery-slide-image {
-        height: 420px;
+        width: 100%;
+
+        height: auto;
+
+        max-height: 600px;
+
+        object-fit: contain;
     }
 
     .gallery-prev {
@@ -364,8 +389,20 @@
         font-size: 15px;
     }
 
+    /*
+       Certificates and photos remain completely visible
+       on mobile.
+    */
     .gallery-slide-image {
-        height: 300px;
+        width: 100%;
+
+        height: auto;
+
+        max-height: 500px;
+
+        object-fit: contain;
+
+        object-position: center;
     }
 
     .gallery-slide-info {
@@ -378,6 +415,7 @@
 
     .gallery-arrow {
         width: 40px;
+
         height: 40px;
 
         font-size: 20px;
