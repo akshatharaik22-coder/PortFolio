@@ -4,15 +4,16 @@ import "../styles/achievements.css";
 function Achievements() {
   const achievements = [
     {
-      year: "2025",
-      title: "Rajya Puraskar Award",
-      organization: "The Bharat Scouts and Guides",
+      year:" Jul 2026",
+      title:"Deloitte Australia-technology Job Simulation",
+      organization:"Deloitte Australia",
       description:
-        "Received the Rajya Puraskar Award, recognizing achievement and participation in scouting activities.",
+        "Successfully completed the Deloitte Australia-technology Job Simulation, demonstrating proficiency in technology-related tasks and problem-solving.",
+
     },
 
     {
-      year: "2025",
+      year: " May 2026",
       title: "Oracle Cloud Infrastructure",
       organization: "Oracle",
       description:
@@ -20,12 +21,56 @@ function Achievements() {
     },
 
     {
-      year: "2025",
+      year: " April 2026",
       title: "Cloud Computing & Distributed Systems",
       organization: "NPTEL",
       description:
         "Completed coursework covering cloud computing concepts, distributed systems, virtualization, and related technologies.",
     },
+    {
+      year:"March 2026",
+      title:"Employability Skill Training Programme",
+      organization:"Mahindra Pride Classroom,Naandi Foundation",
+      description:
+      "Completed a Six Days Employability Skill Training Programme organized by Mahindra Pride Classroom, Naandi Foundation."
+    },
+    {
+      year:"February 2026",
+      title:"Prompt Design in Vertex AI Skill Badge",
+      organization:"Google Cloud",
+      description:
+      "Earned the Prompt Design in Vertex AI Skill Badge, demonstrating proficiency in designing effective prompts for AI applications using Google Cloud's Vertex AI platform."
+    },
+    {
+      year:" March 2026",
+      title:"Data Analysis, Data Lakes and History of Data",
+      organization:"Department of MCA ,NMAMIT Nitte DU in associated with Thought Grains Solutions and Foundation, Udupi",
+       description:
+       "Completed a One-day Workshop on Data Analysis, Data Lakes and History of Data organized by the Department of MCA, NMAMIT Nitte DU in association with Thought Grains Solutions and Foundation, Udupi.",   
+    },
+    {
+      year:"August 2025",
+      title :"Microsoft Azure Learning journey",
+      organization:"Microsoft",
+      description:
+      "Completed the Microsoft Azure Learning journey, gaining knowledge and skills in cloud computing, Azure services, and related technologies.",
+
+    },
+    
+    {
+      year: " March 2025",
+      title: "Rajya Puraskar Award",
+      organization: "The Bharat Scouts and Guides",
+      description:
+        "Received the Rajya Puraskar Award, recognizing achievement and participation in scouting activities.",
+    },
+    {
+      year:"April 2024",
+      title:"Linux and Virtualization Session",
+      organization:"Google Developer Student Clubs, Vivekananda College of Arts, Science and Commerce, Puttur",
+      description:
+      "Actively participated in a session on Linux and virtualization, gaining exposure to advanced computing concepts and virtualization technologies."
+    }
   ];
 
   return (
