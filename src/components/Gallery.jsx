@@ -37,7 +37,7 @@ import skill7 from "../assets/gallery/skill7.jpeg";
 import skill8 from "../assets/gallery/skill8.jpeg";
 
 import algorbit from "../assets/gallery/algorbit.jpeg";
-import Rajyapuraskar from "../assets/gallery/Rajyapuraskar.jpeg";
+import award from "../assets/gallery/award.jpeg";
 
 
 function Gallery() {
@@ -192,7 +192,7 @@ function Gallery() {
     {
       title: "Rajyapuraskar Award",
       category: "Award",
-      image: Rajyapuraskar,
+      image: award,
     },
 
   ];
