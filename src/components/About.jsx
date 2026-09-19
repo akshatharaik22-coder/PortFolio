@@ -6,7 +6,7 @@ import {
   FiSearch,
 } from "react-icons/fi";
 
-import profileImage from "../assets/images/my_pic.jpg";
+import profileImage from "../assets/images/Profile.jpeg";
 
 import "../styles/about.css";
 
