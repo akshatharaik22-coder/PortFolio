@@ -9,6 +9,7 @@ import {
   FaJs,
   FaGitAlt,
 } from "react-icons/fa";
+
 import {
   SiMysql,
   SiMongodb,
@@ -17,6 +18,7 @@ import {
   SiExpress,
   SiDjango,
   SiC,
+  SiVercel,
 } from "react-icons/si";
 
 import "../styles/skills.css";
@@ -38,11 +40,11 @@ function Skills() {
     { name: "TensorFlow", icon: <SiTensorflow /> },
     { name: "OpenCV", icon: <SiOpencv /> },
     { name: "Git", icon: <FaGitAlt /> },
+    { name: "Vercel", icon: <SiVercel /> },
   ];
 
   return (
     <section className="skills" id="skills">
-
       <motion.div
         className="skills-container"
         initial={{ opacity: 0, y: 50 }}
@@ -50,7 +52,6 @@ function Skills() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-
         <div className="skills-heading">
           <p className="section-label">MY TECHNICAL STACK</p>
 
@@ -65,7 +66,6 @@ function Skills() {
         </div>
 
         <div className="skills-grid">
-
           {skills.map((skill, index) => (
             <motion.div
               className="skill-card"
@@ -83,11 +83,8 @@ function Skills() {
               <span>{skill.name}</span>
             </motion.div>
           ))}
-
         </div>
-
       </motion.div>
-
     </section>
   );
 }
