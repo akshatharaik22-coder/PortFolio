@@ -38,6 +38,7 @@ import skill8 from "../assets/gallery/skill8.jpeg";
 
 import algorbit from "../assets/gallery/algorbit.jpeg";
 import award from "../assets/gallery/award.jpeg";
+import career from "../assets/gallery/career.png";
 
 
 function Gallery() {
@@ -178,9 +179,14 @@ function Gallery() {
     /* -------- OTHER ACTIVITIES -------- */
 
     {
-      title: "Placement Excellence Workshop",
+      title: "Placement Excellence Workshop By Algorbit",
       category: "Workshop",
       image: algorbit,
+    },
+    {
+      title:"MCA Career Accelator Workshop By Algorbit",
+      category:"Workshop",
+      image:career,
     },
 
 

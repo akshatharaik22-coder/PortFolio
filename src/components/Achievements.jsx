@@ -4,6 +4,13 @@ import "../styles/achievements.css";
 function Achievements() {
   const achievements = [
     {
+      year:"September 2026",
+      title:"MCA Career Accelator Workshop BY Algorbit",
+      organization:"Algorbit in association with MCA Department, NMAMIT Nitte DU",
+      description:
+        "Participated in the 4 day MCA Career Accelator Workshop organized by Algorbit, gaining insights into career development and industry trends.",
+    },
+    {
       year:" Jul 2026",
       title:"Deloitte Australia-technology Job Simulation",
       organization:"Deloitte Australia",
