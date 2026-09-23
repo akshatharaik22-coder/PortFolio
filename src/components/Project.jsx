@@ -53,6 +53,22 @@ function Projects() {
         "https://github.com/akshatharaik22-coder/Handwritten_verification",
       liveLink: "",
     },
+    {
+  title: "ORAVIA",
+  category: "Full-Stack Web Application",
+  description:
+    "A MERN-based dental appointment management system that allows patients to book appointments online and enables administrators to manage appointment details and status efficiently.",
+  technologies: [
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Axios",
+    "REST API"
+  ],
+  githubLink: "https://github.com/akshatharaik22-coder/Oravia",
+  liveLink: ""
+},
   ];
 
   return (
