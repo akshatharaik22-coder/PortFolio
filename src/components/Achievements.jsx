@@ -4,8 +4,14 @@ import "../styles/achievements.css";
 function Achievements() {
   const achievements = [
     {
+      year:"October 2026",
+      title:"Cloud Computing Workshop By Wipfli",
+      organization:" Wipfli in association with MCA Department, NMAMIT Nitte DU",
+      description:" Participated in the 2 day Cloud Computing Deployment Hands-on Workshop.",
+    },
+    {
       year:"September 2026",
-      title:"MCA Career Accelator Workshop BY Algorbit",
+      title:"MCA Career Accelator Workshop By Algorbit",
       organization:"Algorbit in association with MCA Department, NMAMIT Nitte DU",
       description:
         "Participated in the 4 day MCA Career Accelator Workshop organized by Algorbit, gaining insights into career development and industry trends.",
