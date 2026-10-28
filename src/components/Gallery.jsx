@@ -39,6 +39,8 @@ import skill8 from "../assets/gallery/skill8.jpeg";
 import algorbit from "../assets/gallery/algorbit.jpeg";
 import award from "../assets/gallery/award.jpeg";
 import career from "../assets/gallery/career.png";
+import Cloud from "../assets/gallery/Cloud.png";
+
 
 
 function Gallery() {
@@ -188,7 +190,11 @@ function Gallery() {
       category:"Workshop",
       image:career,
     },
-
+    {
+      title:"Workshop on Cloud Computing",
+      category:"Workshop",
+      image:Cloud,
+    },
 
     /* ========================================
        ACHIEVEMENT CERTIFICATES / AWARDS
