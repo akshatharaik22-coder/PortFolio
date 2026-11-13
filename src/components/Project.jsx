@@ -22,20 +22,30 @@ function Projects() {
     },
 
     {
-      title: "Low-Light Obstacle Detection",
+      title: "Vision Assists-Low-Light Obstacle Detection for Blind People ",
       category: "AI / Computer Vision / Research",
       description:
         "An AI-based assistive system designed to identify obstacles in low-light environments using CLAHE-enhanced images and CNN-based detection.",
       technologies: [
         "Python",
+        "Deep Learning",
+        "Numpy",
+        "PyTorch",
+        "Faster R-CNN",
+        "ResNet-50 FPN",
+        "Computer Vision",
         "OpenCV",
         "CLAHE",
-        "TensorFlow",
-        "CNN",
+        "Adaptive Gamma Correction",
+        "Flutter",
+        "Dart",
+        "FastAPI",
+        "Gradio",
+        "Text-to-Speech",
       ],
       githubLink:
         "https://github.com/akshatharaik22-coder/miniproject",
-      liveLink: "",
+      liveLink: "https://vision-assist-delta.vercel.app",
     },
 
     {
@@ -67,7 +77,7 @@ function Projects() {
     "REST API"
   ],
   githubLink: "https://github.com/akshatharaik22-coder/Oravia",
-  liveLink: ""
+  liveLink: "https://oravia-sepia.vercel.app/",
 },
   ];
 
@@ -151,11 +161,11 @@ function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Live Demo
+                    Demo Interface
                   </a>
                 ) : (
                   <span className="project-link-disabled">
-                    Live Demo
+                    Demo Interface
                   </span>
                 )}
               </div>
