@@ -47,24 +47,7 @@ function Projects() {
         "https://github.com/akshatharaik22-coder/miniproject",
       liveLink: "https://vision-assist-delta.vercel.app",
     },
-
-    {
-      title: "Handwritten Signature Verification",
-      category: "Machine Learning",
-      description:
-        "A signature verification system that compares genuine and forged signatures using image processing and a Siamese neural network approach.",
-      technologies: [
-        "Python",
-        "OpenCV",
-        "NumPy",
-        "Siamese Network",
-      ],
-      githubLink:
-        "https://github.com/akshatharaik22-coder/Handwritten_verification",
-      liveLink: "",
-    },
-    {
-  title: "ORAVIA",
+  {title: "ORAVIA",
   category: "Full-Stack Web Application",
   description:
     "A MERN-based dental appointment management system that allows patients to book appointments online and enables administrators to manage appointment details and status efficiently.",
